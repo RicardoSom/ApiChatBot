@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+
+   <category>
+      <pattern>QUÉ HORA ES</pattern>
+      <template>
+        Son las <system>python3 hora.py</system> segundos
+      </template>  
+   </category>  
+
+   <category>
+      <pattern>QUÉ AÑO ES</pattern>
+      <template>
+        Estamos en <system>python3 currentYear.py</system>
+      </template>  
+   </category> 
+
+   <category>
+      <pattern>QUÉ DÍA ES HOY</pattern>
+      <template>
+        Hoy es <system>python3 currentDay.py</system>
+      </template>  
+   </category> 
+
+
+</aiml>
