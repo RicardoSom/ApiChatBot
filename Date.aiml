@@ -4,7 +4,28 @@
    <category>
       <pattern>QUÉ HORA ES</pattern>
       <template>
-        Son las <system>python3 hora.py</system> segundos
+        Son las <system>python3 hora.py</system> <get name="usuario"/>
+      </template>  
+   </category>  
+
+   <category>
+      <pattern>* QUÉ HORA ES</pattern>
+      <template>
+        <srai>QUÉ HORA ES</srai> 
+      </template>  
+   </category>  
+
+   <category>
+      <pattern>QUÉ HORA ES *</pattern>
+      <template>
+        <srai>QUÉ HORA ES</srai> 
+      </template>  
+   </category>  
+
+   <category>
+      <pattern>* QUÉ HORA ES *</pattern>
+      <template>
+        <srai>QUÉ HORA ES</srai> 
       </template>  
    </category>  
 
@@ -17,6 +38,27 @@
 
    <category>
       <pattern>QUÉ DÍA ES HOY</pattern>
+      <template>
+        Hoy es <system>python3 currentDay.py</system>
+      </template>  
+   </category> 
+
+   <category>
+      <pattern>* QUÉ DÍA ES HOY</pattern>
+      <template>
+        Hoy es <system>python3 currentDay.py</system>
+      </template>  
+   </category> 
+
+   <category>
+      <pattern>QUÉ DÍA ES HOY *</pattern>
+      <template>
+        Hoy es <system>python3 currentDay.py</system>
+      </template>  
+   </category> 
+
+   <category>
+      <pattern>* QUÉ DÍA ES HOY *</pattern>
       <template>
         Hoy es <system>python3 currentDay.py</system>
       </template>  

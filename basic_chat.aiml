@@ -4,7 +4,18 @@
     <category>
         <pattern>HOLA</pattern>
         <template>
-            Hola es un placer
+        <random>
+            <li>Hola es un placer, cómo te llamas?</li>
+            <li>Hola es un gusto, cómo te llamas?</li>
+            <li>Bienvenido, cómo te llamas?</li>
+        </random>    
+        </template>
+    </category>
+
+    <category>
+        <pattern>ME LLAMO *</pattern>
+        <template>
+            Es un gusto <set name="usuario"><star/></set>
         </template>
     </category>
 
@@ -12,25 +23,217 @@
         <pattern>CÓMO ESTÁS</pattern>
         <template>
         <random>
-            <li>Muy bien</li>
-            <li>Ha sido un gran día</li>
-            <li>Excelente gracias por preguntar</li>
-            <li>No me quejo</li>
+            <li>Muy bien, y tú?</li>
+            <li>Ha sido un gran día, y tú cómo estás?</li>
+            <li>Excelente gracias por preguntar, cómo estás?</li>
+            <li>No me quejo, y tú</li>
+        </random> 
+        </template>
+    </category>
+    <category>
+        <pattern>* CÓMO ESTÁS</pattern>
+        <template>
+        <random>
+            <li>Muy bien, y tú?</li>
+            <li>Ha sido un gran día, y tú cómo estás?</li>
+            <li>Excelente gracias por preguntar, cómo estás?</li>
+            <li>No me quejo, y tú</li>
+        </random> 
+        </template>
+    </category>
+    <category>
+        <pattern>CÓMO ESTÁS *</pattern>
+        <template>
+        <random>
+            <li>Muy bien, y tú?</li>
+            <li>Ha sido un gran día, y tú cómo estás?</li>
+            <li>Excelente gracias por preguntar, cómo estás?</li>
+            <li>No me quejo, y tú</li>
+        </random> 
+        </template>
+    </category>
+    <category>
+        <pattern>* CÓMO ESTÁS *</pattern>
+        <template>
+        <random>
+            <li>Muy bien, y tú?</li>
+            <li>Ha sido un gran día, y tú cómo estás?</li>
+            <li>Excelente gracias por preguntar, cómo estás?</li>
+            <li>No me quejo, y tú</li>
         </random> 
         </template>
     </category>
 
     <category>
         <pattern>BIEN TAMBIÉN</pattern>
+        <that>MUY BIEN Y TÚ</that>
         <template>
-            Eso es excelente
+        <random>
+            <li>Eso es excelente</li>     
+            <li>Perfecto</li> 
+            <li>Eso me alegra</li>      
+        </random>    
+        </template>
+    </category>
+
+    <category>
+        <pattern>BIEN TAMBIÉN</pattern>
+        <that>HA SIDO UN GRAN DÍA Y TÚ CÓMO ESTÁS</that>
+        <template>
+        <random>
+            <li>Eso es excelente</li>     
+            <li>Perfecto</li> 
+            <li>Eso me alegra</li> 
+        </random>    
+        </template>
+    </category>
+
+    <category>
+        <pattern>BIEN TAMBIÉN</pattern>
+        <that>EXCELENTE GRACIAS POR PREGUNTAR CÓMO ESTÁS</that>
+        <template>
+        <random>
+            <li>Eso es excelente</li>     
+            <li>Perfecto</li> 
+            <li>Eso me alegra</li> 
+        </random> 
+        </template>
+    </category>
+
+    <category>
+        <pattern>BIEN TAMBIÉN</pattern>
+        <that>NO ME QUEJO Y TÚ</that>
+        <template>
+        <random>
+            <li>Eso es excelente</li>     
+            <li>Perfecto</li> 
+            <li>Eso me alegra</li> 
+        </random> 
         </template>
     </category>
 
     <category>
         <pattern>ESTOY BIEN</pattern>
+        <that>MUY BIEN Y TÚ</that>
         <template>
-            <srai>BIEN TAMBIÉN</srai>
+        <random>
+            <li>Eso es excelente</li>     
+            <li>Perfecto</li> 
+            <li>Eso me alegra</li>      
+        </random>    
+        </template>
+    </category>
+
+    <category>
+        <pattern>ESTOY BIEN</pattern>
+        <that>HA SIDO UN GRAN DÍA Y TÚ CÓMO ESTÁS</that>
+        <template>
+        <random>
+            <li>Eso es excelente</li>     
+            <li>Perfecto</li> 
+            <li>Eso me alegra</li> 
+        </random>    
+        </template>
+    </category>
+
+    <category>
+        <pattern>ESTOY BIEN</pattern>
+        <that>EXCELENTE GRACIAS POR PREGUNTAR CÓMO ESTÁS</that>
+        <template>
+        <random>
+            <li>Eso es excelente</li>     
+            <li>Perfecto</li> 
+            <li>Eso me alegra</li> 
+        </random> 
+        </template>
+    </category>
+
+    <category>
+        <pattern>ESTOY BIEN</pattern>
+        <that>NO ME QUEJO Y TÚ</that>
+        <template>
+        <random>
+            <li>Eso es excelente</li>     
+            <li>Perfecto</li> 
+            <li>Eso me alegra</li> 
+        </random> 
+        </template>
+    </category>
+
+    <category>
+        <pattern>MUY BIEN</pattern>
+        <that>MUY BIEN Y TÚ</that>
+        <template>
+        <random>
+            <li>Eso es excelente</li>     
+            <li>Perfecto</li> 
+            <li>Eso me alegra</li>      
+        </random>    
+        </template>
+    </category>
+
+    <category>
+        <pattern>MUY BIEN</pattern>
+        <that>HA SIDO UN GRAN DÍA Y TÚ CÓMO ESTÁS</that>
+        <template>
+        <random>
+            <li>Eso es excelente</li>     
+            <li>Perfecto</li> 
+            <li>Eso me alegra</li> 
+        </random>    
+        </template>
+    </category>
+
+    <category>
+        <pattern>MUY BIEN</pattern>
+        <that>EXCELENTE GRACIAS POR PREGUNTAR CÓMO ESTÁS</that>
+        <template>
+        <random>
+            <li>Eso es excelente</li>     
+            <li>Perfecto</li> 
+            <li>Eso me alegra</li> 
+        </random> 
+        </template>
+    </category>
+
+    <category>
+        <pattern>MUY BIEN</pattern>
+        <that>NO ME QUEJO Y TÚ</that>
+        <template>
+        <random>
+            <li>Eso es excelente</li>     
+            <li>Perfecto</li> 
+            <li>Eso me alegra</li> 
+        </random> 
+        </template>
+    </category>
+
+    <category>
+        <pattern>QUIÉN ES MIRIAM</pattern>
+        <template>
+            La novia de mi creador
+        </template>
+    </category>
+
+    <category>
+        <pattern>CUÁNTOS AÑOS TIENE</pattern>
+        <that>LA NOVIA DE MI CREADOR</that>
+        <template>
+            Myrian tiene 25
+        </template>
+    </category>
+
+    <category>
+        <pattern>CUÁNTOS AÑOS TIENE</pattern>
+        <template>
+            Quién?
+        </template>
+    </category>
+
+    <category>
+        <pattern>BIEN TAMBIÉN</pattern>
+        <template>
+            No se a qué contexto te refieres.
         </template>
     </category>
 
@@ -64,6 +267,20 @@
 
     <category>
         <pattern>QUÉ ERES</pattern>
+        <template>
+            Soy un chatbot de voz
+        </template>
+    </category>
+
+    <category>
+        <pattern>* QUÉ ERES</pattern>
+        <template>
+            Soy un chatbot de voz
+        </template>
+    </category>
+
+    <category>
+        <pattern>QUÉ ERES *</pattern>
         <template>
             Soy un chatbot de voz
         </template>
@@ -133,9 +350,63 @@
     </category>
 
     <category>
+        <pattern>MI IMPRESORA NO FUNCIONA</pattern>
+        <template>
+            qué marca de <set name="topic">impresora</set> tienes? 
+        </template>
+    </category>
+
+    <topic name="IMPRESORA">
+    <category>
+        <pattern>TENGO UNA *</pattern>
+        <template>
+            Ok, prueba reiniciando la impresora <think> <set name="modelo"><star/></set></think> y me dices que sucede
+        </template>
+    </category>
+
+    <category>
+        <pattern>* TENGO UNA *</pattern>
+        <template>
+            Ok, prueba reiniciando la impresora <think> <set name="modelo"><star index="2"/></set></think> y me dices que sucede
+        </template>
+    </category>
+
+    <category>
+        <pattern>SIGUE SIN FUNCIONAR</pattern>
+        <that>OK PRUEBA REINICIANDO LA IMPRESORA Y ME DICES QUE SUCEDE</that>
+        <template>
+            Si tu impresora <get name="modelo"/> sigue sin funcionar prueba reiniciando el computador
+        </template>
+    </category>
+
+    <category>
+        <pattern>TAMPOCO FUNCIONA</pattern>
+        <template>
+            Hay que revisar si están instalados los controladores de tu impresora <get name="modelo"/> en tu computador
+        </template>
+    </category>
+
+    <category>
+        <pattern>GRACIAS AHORA FUNCIONA</pattern>
+        <template>
+            De nada me encanta ayudar <set name="topic"></set>
+        </template>
+    </category>
+
+    <category>
+        <pattern>YA NO SE QUE HACER</pattern>
+        <template>
+            De acuerdo en estos momentos un técnico se acercará a tu área<set name="topic"></set>
+        </template>
+    </category>
+
+
+    </topic>
+
+    <category>
         <pattern>*</pattern>
         <template>
-            Se más específico por favor
+            En este momento no puedo responder eso, intenta de otra forma u otra pregunta
         </template>
     </category>
     

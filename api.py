@@ -9,6 +9,14 @@ app = flask.Flask(__name__)
 CORS(app)
 app.config["DEBUG"] = True
 
+# Create the kernel and learn AIML files
+
+kernel = aiml.Kernel()
+if os.path.isfile("bot_brain.brn"):
+   kernel.bootstrap(brainFile = "bot_brain.brn")
+else:
+   kernel.bootstrap(learnFiles = "zoe-startup.xml", commands = "load aiml b")
+   kernel.saveBrain("bot_brain.brn")
 
 @app.route('/', methods=['GET'])
 def home():
@@ -16,16 +24,8 @@ def home():
 
 @app.route('/bot', methods=['GET'])
 def API():
-    # Create the kernel and learn AIML files
-    kernel = aiml.Kernel()
-    if os.path.isfile("bot_brain.brn"):
-      kernel.bootstrap(brainFile = "bot_brain.brn")
-    else:
-      kernel.bootstrap(learnFiles = "zoe-startup.xml", commands = "load aiml b")
-      kernel.saveBrain("bot_brain.brn")
-
+    
     data = request.args.get('input')
-
 
     zoes_response = kernel.respond(data)
     
