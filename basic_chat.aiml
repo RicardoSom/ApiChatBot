@@ -20,6 +20,20 @@
     </category>
 
     <category>
+        <pattern> SOY *</pattern>
+        <template>
+        Es un gusto <set name="usuario"><star/></set>
+        </template>
+    </category>
+
+    <category>
+        <pattern>MI NOBRE ES *</pattern>
+        <template>
+            Es un gusto <set name="usuario"><star/></set>
+        </template>
+    </category>
+
+    <category>
         <pattern>CÓMO ESTÁS</pattern>
         <template>
         <random>

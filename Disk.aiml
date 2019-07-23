@@ -2,7 +2,7 @@
    <category>
       <pattern>LIBRE</pattern>
       <template>
-         Tienes aproximadamente <system>python3 disk.py</system> libres
+         Tienes aproximadamente <system>python3 disk.py</system> libres en tu disco duro
       </template>  
    </category>  
 
