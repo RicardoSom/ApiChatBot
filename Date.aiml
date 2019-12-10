@@ -64,5 +64,54 @@
       </template>  
    </category> 
 
+   <category>
+      <pattern>* DADO DE 6 CARAS</pattern>
+      <template>
+        Claro, el resultado es <system>python3 dice.py</system>
+      </template>  
+   </category> 
+
+   <category>
+      <pattern>* DADO</pattern>
+      <template>
+        Claro, el resultado es <system>python3 dice.py</system>
+      </template>  
+   </category> 
+
+   <category>
+      <pattern>* DADO DE 12 CARAS</pattern>
+      <template>
+        Claro, el resultado es <system>python3 dice12.py</system>
+      </template>  
+   </category> 
+
+   <category>
+      <pattern>* Dado de 6 caras</pattern>
+      <template>
+        Claro, el resultado es <system>python3 dice.py</system>
+      </template>  
+   </category> 
+
+   <category>
+      <pattern>* CALCULADORA *</pattern>
+      <template>
+        Encantada<system>python3 execute.py</system>
+      </template>  
+   </category> 
+
+   <category>
+      <pattern>* CALCULADORA</pattern>
+      <template>
+        Encantada<system>python3 execute.py</system>
+      </template>  
+   </category> 
+
+   <category>
+      <pattern>ABRE YOUTUBE</pattern>
+      <template>
+        Encantada<system>python3 webTab.py</system>
+      </template>  
+   </category> 
+
 
 </aiml>
