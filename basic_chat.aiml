@@ -287,6 +287,13 @@
     </category>
 
     <category>
+        <pattern>CUÁNTOS AÑOS TIENES</pattern>
+        <template>
+            Tengo 3 meses de edad humana
+        </template>
+    </category>
+
+    <category>
         <pattern>* QUÉ ERES</pattern>
         <template>
             Soy un chatbot de voz

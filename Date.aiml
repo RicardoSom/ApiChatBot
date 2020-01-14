@@ -9,6 +9,40 @@
    </category>  
 
    <category>
+      <pattern>ENVÍA UN CORREO A RICARDO</pattern>
+      <template>
+          De acuerdo, cuál es el mensaje
+      </template>  
+   </category>  
+
+   <category>
+      <pattern>ENVÍA UN CORREO A VICTOR</pattern>
+      <template>
+          De acuerdo, dime el mensaje
+      </template>  
+   </category>  
+
+   <category>
+      <pattern> * </pattern>
+      <that> DE ACUERDO DIME EL MENSAJE </that>
+      <!-- <system>python3 correo.py <star/></system> -->
+      <template>
+      <think> <system>python3 correoVictor.py <star/></system></think>
+            El correo fue enviado con exito 
+      </template>  
+   </category>  
+
+   <category>
+      <pattern> * </pattern>
+      <that> DE ACUERDO CUÁL ES EL MENSAJE </that>
+      <!-- <system>python3 correo.py <star/></system> -->
+      <template>
+      <think> <system>python3 correo.py <star/></system></think>
+            El correo fue enviado con exito 
+      </template>  
+   </category>  
+
+   <category>
       <pattern>* QUÉ HORA ES</pattern>
       <template>
         <srai>QUÉ HORA ES</srai> 
@@ -19,6 +53,22 @@
       <pattern>QUÉ HORA ES *</pattern>
       <template>
         <srai>QUÉ HORA ES</srai> 
+      </template>  
+   </category>  
+
+   <category>
+      <pattern> ABRE YOUTUBE </pattern>
+      <template>
+        <think> <system> python3 navegador.py </system></think>
+            Listo  
+      </template>  
+   </category>  
+
+   <category>
+      <pattern> BUSCA EN YOUTUBE * </pattern>
+      <template>
+        <think> <system>python3 navegador.py <star/></system></think>
+            Listo  
       </template>  
    </category>  
 
@@ -106,12 +156,12 @@
       </template>  
    </category> 
 
-   <category>
+   <!-- <category>
       <pattern>ABRE YOUTUBE</pattern>
       <template>
         Encantada<system>python3 webTab.py</system>
       </template>  
-   </category> 
+   </category>  -->
 
 
 </aiml>
